@@ -12,9 +12,10 @@ import ScreenShareIcon from '@mui/icons-material/ScreenShare';
 import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import ChatIcon from "@mui/icons-material/Chat";
 import { useNavigate } from "react-router-dom";
+import server from "../environment.js";
 
 
-const server_url = "http://localhost:8000";
+const server_url = server;
 
 import styles from "../styles/VideoComponent.module.css";
 import IconButton from "@mui/material/IconButton";
