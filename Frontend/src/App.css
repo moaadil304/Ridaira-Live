@@ -1,0 +1,510 @@
+/* ==========================================
+   GOOGLE FONTS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+/* ==========================================
+   LANDING PAGE
+========================================== */
+
+.landingPageContainer {
+  width: 100%;
+  min-height: 100vh;
+  background: url("/public/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.landingPageContainer nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+}
+
+.navHeader h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #D97500;
+  cursor: pointer;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navList p {
+  cursor: pointer;
+  font-size: 1rem;
+  transition: .3s;
+}
+
+.navList p:hover {
+  color: #D97500;
+}
+
+.navList div {
+  background: #D97500;
+  padding: 12px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.navList div:hover {
+  background: #c66700;
+}
+
+.navList div p {
+  color: white;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.landingMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 90px);
+  padding: 0 70px;
+  gap: 40px;
+}
+
+.landingContent {
+  flex: 1;
+}
+
+.landingContent h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.landingContent h1 span {
+  color: #D97500;
+}
+
+.landingSubtitle {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  color: #D97500;
+  font-weight: 600;
+}
+
+.landingDescription {
+  margin-top: 18px;
+  max-width: 580px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #f5f5f5;
+}
+
+.landingContent div[role="button"] {
+  width: fit-content;
+  margin-top: 35px;
+  background: #D97500;
+  padding: 16px 36px;
+  border-radius: 14px;
+  transition: .3s;
+}
+
+.landingContent div[role="button"]:hover {
+  background: #c66700;
+}
+
+.landingContent a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.landingImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.landingImage img {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px) {
+
+  .landingPageContainer nav {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .navHeader h2 {
+    font-size: 1.8rem;
+  }
+
+  .navList {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navList div {
+    padding: 10px 20px;
+  }
+
+  .landingMainContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .landingContent h1 {
+    font-size: 2.2rem;
+  }
+
+  .landingSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .landingDescription {
+    font-size: 1rem;
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  .landingContent div[role="button"] {
+    margin: 30px auto 0;
+  }
+
+  .landingImage img {
+    width: 90%;
+  }
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(min-width:769px) and (max-width:1024px) {
+
+  .landingPageContainer nav {
+    padding: 25px 40px;
+  }
+
+  .navList {
+    gap: 20px;
+  }
+
+  .landingMainContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 40px;
+  }
+
+  .landingContent h1 {
+    font-size: 3rem;
+  }
+
+  .landingDescription {
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  .landingContent div[role="button"] {
+    margin: 35px auto 0;
+  }
+
+  .landingImage img {
+    width: 70%;
+  }
+
+}
+
+
+/* ==========================================
+   HOME PAGE
+========================================== */
+
+.navBar {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .08);
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+}
+
+.navLeft h2 {
+  color: #D97500;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navRight p {
+  font-weight: 500;
+  color: #444;
+}
+
+.navRight button {
+  border-radius: 10px !important;
+}
+
+/* ==========================================
+   MEETING PAGE
+========================================== */
+
+.meetContainer {
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  gap: 50px;
+  background: #f8fafc;
+}
+
+.leftPanel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.leftPanel h2 {
+  font-size: 3rem;
+  color: #222;
+  line-height: 1.25;
+  margin-bottom: 20px;
+}
+
+.meetingText {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-bottom: 35px;
+}
+
+.joinBox {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.joinBox .MuiTextField-root {
+  flex: 1;
+}
+
+.joinBox button {
+  height: 56px;
+  min-width: 130px;
+  background: #D97500 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
+
+.joinBox button:hover {
+  background: #c86800 !important;
+}
+
+/* Material UI TextField */
+
+.joinBox .MuiOutlinedInput-root fieldset {
+  border-color: #D97500;
+}
+
+.joinBox .MuiOutlinedInput-root:hover fieldset {
+  border-color: #c86800;
+}
+
+.joinBox .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #D97500;
+}
+
+.joinBox .MuiInputLabel-root.Mui-focused {
+  color: #D97500;
+}
+
+/* ==========================================
+   RIGHT PANEL
+========================================== */
+
+.rightPanel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightPanel img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media(max-width:1024px) {
+
+  .navBar {
+    padding: 20px 30px;
+  }
+
+  .navLeft h2 {
+    font-size: 1.7rem;
+  }
+
+  .meetContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 50px 30px;
+  }
+
+  .leftPanel {
+    align-items: center;
+  }
+
+  .leftPanel h2 {
+    font-size: 2.3rem;
+  }
+
+  .meetingText {
+    max-width: 650px;
+  }
+
+  .joinBox {
+    width: 80%;
+  }
+
+  .rightPanel img {
+    width: 70%;
+  }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px) {
+
+  .navBar {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .navLeft h2 {
+    font-size: 1.5rem;
+  }
+
+  .navRight {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .meetContainer {
+    flex-direction: column-reverse;
+    padding: 35px 18px;
+    text-align: center;
+  }
+
+  .leftPanel {
+    align-items: center;
+  }
+
+  .leftPanel h2 {
+    font-size: 1.8rem;
+  }
+
+  .meetingText {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+
+  .joinBox {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .joinBox .MuiTextField-root {
+    width: 100%;
+  }
+
+  .joinBox button {
+    width: 100%;
+  }
+
+  .rightPanel img {
+    width: 90%;
+  }
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media(max-width:480px) {
+
+  .navLeft h2 {
+    font-size: 1.3rem;
+  }
+
+  .leftPanel h2 {
+    font-size: 1.45rem;
+  }
+
+  .meetingText {
+    font-size: .95rem;
+  }
+
+  .rightPanel img {
+    width: 95%;
+  }
+
+}
